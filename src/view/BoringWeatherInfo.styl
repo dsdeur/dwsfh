@@ -1,13 +1,23 @@
+@import 'jeet'
+
 .BoringWeatherInfo
-    float left
     display block
 
+    background #fff
     border 15px solid #ddddee
     border-radius 5px
-    width 310px
-    margin 10px 10px
+    margin 10px 0px
+    col(1/3, cycle: 3)
     padding 10px
     text-align center
+
+    @media (max-width: 620px)
+        col(1/2, uncycle:3, cycle: 2)
+        text-align center
+
+    @media (max-width: 380px)
+        col(1, uncycle:2)
+        text-align center
 
     .icon
         width 130px

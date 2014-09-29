@@ -21,18 +21,17 @@ var View = React.createClass({
             Beautifully show the weather in: 
             <TextBox onChange={this.onCityChanged} defaultValue={model.location.city}/>
 
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <br/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <BoringWeatherInfo data={model.betterLocation.currentWeather}/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <br/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <BoringWeatherInfo data={model.location.currentWeather}/>
-            <br/>
+            <div>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.betterLocation.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+                <BoringWeatherInfo data={model.location.currentWeather}/>
+            </div>
         </div>;
     }
 });
